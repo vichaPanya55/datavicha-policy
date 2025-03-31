@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head><title>OAuth Callback</title></head>
+<body>
+  <h1>Welcome back from TikTok!</h1>
+  <p>Authorization completed. You can close this tab.</p>
+  <script>
+    // Optional: ดึง access code จาก URL
+    const params = new URLSearchParams(window.location.search);
+    const code = params.get("code");
+    if (code) {
+      console.log("Authorization code:", code);
+    }
+  </script>
+</body>
+</html>
